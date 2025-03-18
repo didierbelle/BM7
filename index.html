@@ -1,74 +1,675 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth scroll-mt-4">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>BM7 Productions - Productions de films et de vidéo professionnelles</title>
 
-
-    <meta name="description" content="Territoires et Perspectives offre une expertise reconnue dans l’accompagnement des collectivités publiques et des entreprises dans la mise en œuvre des projets stratégiques et structurels, ainsi qu'une connaissance approfondie des politiques publiques."> 
+    <meta name="description" content="BM7 Productions - Expert en productions de films et vidéos professionnelles pour captiver et inspirer votre audience avec une qualité inégalée.">
     <meta name="keywords" content="accompagnement collectivités publiques, projets stratégiques, projets structurels, politiques publiques, Territoires et Perspectives"> 
     <meta name="author" content="BandM7 productions"> 
-    <meta property="og:title" content="Territoires et Perspectives"> 
+    <meta property="og:title" content="BM7 Productions"> 
     <meta property="og:description" content="Expertise reconnue dans l’accompagnement des collectivités publiques et des entreprises dans la mise en œuvre des projets stratégiques et structurels."> 
-    <meta property="og:image" content="./logo.jpg"> 
+    <meta property="og:image" content="./assets/logo2.png"> 
     <meta property="og:url" content="URL-de-ton-site"> 
 
     <link rel="stylesheet" href="./output.css">
-    <link rel="shortcut icon" href="./mini_logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <title>B&M7 Produtions</title>
-    <link rel="stylesheet" href="output.css">
 </head>
-<body>
+<body class="bg-white selection:bg-orange-100 selection:text-orange-900">
+
+    
+    <header class="h-screen relative overflow-hidden bg-white">
+        
+
+        <!-- <nav class="backdrop-blur z-10 w-full fixed top-0 left-0 right-0"> -->
+        <nav class="bg-white z-10 w-full fixed top-0 left-0 right-0 h-16 transition overflow-hidden">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <!-- Mobile menu button-->
+                  <button id="btnToggleMenu" type="button" class="relative inline-flex items-center justify-center -md p-2 text-gray-400 transition hover:bg-orange-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex shrink-0 items-center">
+                    <!-- <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=orange&shade=700" alt="Your Company"> -->
+                    <img class="h-8 w-auto scale-150" src="./assets/logo2.png" alt="Your Company">
+                  </div>
+                  <div class="hidden sm:ml-6 sm:block w-1/3">
+                    <div class="flex justify-around">
+                      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                      <a href="#mission" class="-md px-6 py-2 text-sm font-medium tracking-tighter uppercase text-orange-700 hover:bg-orange-100/50 transition hover:text-dark hover:scale-105">Mission</a>
+                      <a href="#presentation" class="-md px-6 py-2 text-sm font-medium uppercase text-orange-700 hover:bg-orange-100/50 transition hover:scale-105">Presentation</a>
+                      <a href="#services" class="-md px-6 py-2 text-sm font-medium uppercase text-orange-700 hover:bg-orange-100/50 transition hover:scale-105">Services</a>
+                      <a href="#equipe" class="-md px-6 py-2 text-sm font-medium uppercase underline border border-orange-700/20 text-orange-700 hover:bg-orange-700 transition hover:text-white hover:scale-105">Equipe</a>
+                      
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="hidden absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                  <button type="button" class="relative -full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">View notifications</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                    </svg>
+                  </button>
+          
+                  
+                </div>
+              </div>
+            </div>
+          
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+              <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#mission" class="block -md px-3 py-2 text-base font-medium text-orange-700 hover:bg-orange-100/50 transition hover:scale-105 hover:pl-4 uppercase" aria-current="page">Mission</a>
+                <a href="#presentation" class="block -md px-3 py-2 text-base font-medium text-orange-700 hover:bg-orange-100/50 transition hover:scale-105 hover:pl-4 uppercase">Presentation</a>
+                <a href="#services" class="block -md px-3 py-2 text-base font-medium text-orange-700 hover:bg-orange-100/50 transition hover:scale-105 hover:pl-4 uppercase">Services</a>
+                <a href="#equipe" class="block -md px-3 py-2 text-base font-medium border border-orange-700/20 text-orange-700 hover:bg-orange-700 transition hover:scale-105 hover:pl-4  hover:text-white uppercase">Equipe</a>
+              </div>
+            </div>
+          </nav>
+          
+
+        <div class="z-0 h-90vh relative top-10vh pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+            <div class="sm:max-w-lg">
+            <h1 class="font text-4xl font-bold tracking-tight text-orange-700 sm:text-6xl" contenteditable="true">Films and Podcast production</h1>
+            <p class="mt-8 text-xl text-gray-900">Découvrez notre expertise pour transformer vos idées en créations inoubliables.</p>
+            </div>
+            <div>
+            <div class="mt-10">
+                <!-- Decorative image grid -->
+                <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                    <div class="flex items-center space-x-6 lg:space-x-8">
+                    <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div class="h-64 w-44 overflow-hidden -lg sm:opacity-0 lg:opacity-100">
+                        <img src="./assets/lens.jpg" class="h-full w-full object-cover object-center">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden -lg">
+                        <img src="./assets/cam2.jpg" alt="" class="h-full w-full object-cover object-center">
+                        </div>
+                    </div>
+                    <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div class="h-64 w-44 overflow-hidden -lg">
+                        <img src="./assets/film-cam.jpg" alt="" class="h-full w-full object-cover object-center">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden -lg">
+                        <img src="./assets/camera.jpg" alt="" class="h-full w-full object-cover object-center">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden -lg">
+                        <img src="./assets/podcast.jpg" alt="" class="h-full w-full object-cover object-center">
+                        </div>
+                    </div>
+                    <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div class="h-64 w-44 overflow-hidden -lg">
+                        <img src="./assets/film-cam.jpg" alt="" class="h-full w-full object-cover object-center">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden -lg">
+                        <img src="./assets/radionotes.jpg" alt="" class="h-full w-full object-cover object-center">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- <a href="#" class="inline-block relative -top-3 -md border border-transparent bg-orange-600 py-3 px-8 text-center font-medium text-white hover:bg-orange-700">Découvrez plus
+                    <i class="fa fa-angle-double-down animate-bounce pl-2" aria-hidden="true"></i>
+                </a> -->
+
+                <a
+                    class="relative -top-3 group inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+                    href="#mission"
+                    >
+                    <span class="absolute inset-0 border border-orange-600 group-active:border-orange-500"></span>
+                    <span
+                    class="block border border-orange-600 bg-orange-600 px-8 py-3 sm:px-12 transition-transform active:border-orange-500 active:bg-orange-500 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                    >
+                    Nous contacter
+                    <i class="fa fa-angle-double-down animate-bounce pl-2" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </header>
 
 
-    <header class="bg-white fixed z-50 w-full overflow-hidden">
-        <nav class="bg-orange-600/20 w-full h-18 px-8 md:px-28 flex items-center justify-center">
-            <div class="flex items-center justify-center h-1/2 w-full space-x-2">
-                <i class="fa fa-bars cursor-pointer sm:hidden" aria-hidden="true"></i>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.54 21.61"><defs><style>.cls-1{font-size:13px;stroke:#c04d17;stroke-miterlimit:10;font-family:MyanmarText, Myanmar Text;letter-spacing:0.01em;}.cls-1,.cls-2{fill:#1d1d1b;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><text class="cls-1" transform="translate(0.5 11.55)">BandM7</text><path class="cls-2" d="M1.42,14.67a.66.66,0,0,0,0-.15.2.2,0,0,0-.06-.11.17.17,0,0,0-.1-.06.5.5,0,0,0-.18,0l-.37,0,0-.19.46-.08.5-.07C1.8,14,2,14,2.15,14l.5,0a2.74,2.74,0,0,1,.59.06,1.43,1.43,0,0,1,.49.19,1,1,0,0,1,.33.37,1.25,1.25,0,0,1,.12.58,1.85,1.85,0,0,1-.14.72,1.47,1.47,0,0,1-.38.54,1.59,1.59,0,0,1-.58.34,2.29,2.29,0,0,1-.76.12.23.23,0,0,1-.13,0,.17.17,0,0,1,0-.12v-.07a2.2,2.2,0,0,0,.55-.06,1.42,1.42,0,0,0,.39-.18,1.25,1.25,0,0,0,.26-.25,1.35,1.35,0,0,0,.14-.3,1.74,1.74,0,0,0,.07-.29,2.62,2.62,0,0,0,0-.27,1.36,1.36,0,0,0-.09-.53,1,1,0,0,0-.24-.34.86.86,0,0,0-.36-.17,1.49,1.49,0,0,0-.43-.06H2.24l-.24,0c0,.11,0,.26,0,.45s0,.41,0,.65,0,.52,0,.81,0,.59,0,.91,0,.65,0,1l0,1-.52.07h0c0-.42,0-.82,0-1.19s0-.75,0-1.1,0-.71,0-1.06S1.42,15,1.42,14.67Z"/><path class="cls-2" d="M5.15,14.67a.66.66,0,0,0,0-.15.29.29,0,0,0-.06-.11A.17.17,0,0,0,5,14.35a.42.42,0,0,0-.17,0l-.37,0,0-.19.45-.08.5-.07L5.86,14l.5,0A2.74,2.74,0,0,1,7,14a1.32,1.32,0,0,1,.47.18,1,1,0,0,1,.32.35,1.19,1.19,0,0,1,.11.53,1.51,1.51,0,0,1-.09.53,1.79,1.79,0,0,1-.27.44,1.78,1.78,0,0,1-.43.32,2.26,2.26,0,0,1-.55.22l.41.69c.13.19.24.37.35.52s.2.27.28.38a2.27,2.27,0,0,0,.25.27.83.83,0,0,0,.17.16.72.72,0,0,0,.15.11l.15.06h.32l.17-.06.06.18a2.85,2.85,0,0,1-.49.19,1.41,1.41,0,0,1-.36.07l-.14,0-.13-.05L7.57,19l-.13-.12a2.92,2.92,0,0,1-.28-.3c-.1-.13-.22-.29-.35-.48s-.28-.42-.44-.69-.33-.57-.52-.91v0a2.39,2.39,0,0,0,.66-.11,1.06,1.06,0,0,0,.43-.25.91.91,0,0,0,.24-.37,1.53,1.53,0,0,0,.08-.49A1,1,0,0,0,7,14.45a1.16,1.16,0,0,0-.81-.26H6l-.23,0c0,.11,0,.26,0,.45s0,.41,0,.65,0,.52,0,.81,0,.59,0,.91,0,.65,0,1l0,1-.52.07H5c0-.42,0-.82,0-1.19s0-.75,0-1.1,0-.71,0-1.06S5.15,15,5.15,14.67Z"/><path class="cls-2" d="M10.68,19.16A2.16,2.16,0,0,1,9.87,19a1.72,1.72,0,0,1-.64-.46,2.24,2.24,0,0,1-.41-.75,3.32,3.32,0,0,1-.15-1.05A4.52,4.52,0,0,1,8.73,16a3.46,3.46,0,0,1,.49-1.27,2.1,2.1,0,0,1,.43-.46,1.72,1.72,0,0,1,.55-.3,2,2,0,0,1,.66-.11,1.92,1.92,0,0,1,.81.16,1.69,1.69,0,0,1,.64.45,2.22,2.22,0,0,1,.41.76,3.32,3.32,0,0,1,.15,1,4.52,4.52,0,0,1-.06.74,3.77,3.77,0,0,1-.18.68,3.56,3.56,0,0,1-.31.58,1.88,1.88,0,0,1-.43.46,1.78,1.78,0,0,1-.54.3A1.81,1.81,0,0,1,10.68,19.16Zm.1-.28a1.31,1.31,0,0,0,.84-.32,1.5,1.5,0,0,0,.28-.37,2.1,2.1,0,0,0,.2-.48,4.78,4.78,0,0,0,.12-.57c0-.2,0-.42,0-.64a4,4,0,0,0-.11-1,2.47,2.47,0,0,0-.32-.73,1.46,1.46,0,0,0-.47-.43,1.27,1.27,0,0,0-.58-.14,1.34,1.34,0,0,0-.46.08,1.31,1.31,0,0,0-.37.24,1.48,1.48,0,0,0-.29.36,3.45,3.45,0,0,0-.2.48,3.32,3.32,0,0,0-.11.58,4.31,4.31,0,0,0,0,.64,3.94,3.94,0,0,0,.12,1,2.14,2.14,0,0,0,.32.73,1.2,1.2,0,0,0,.47.43A1.16,1.16,0,0,0,10.78,18.88Z"/><path class="cls-2" d="M13.23,14.17l.47-.09.5-.07.5,0,.5,0c.23,0,.45,0,.67,0a2.93,2.93,0,0,1,.6.15,2.13,2.13,0,0,1,.52.27,1.68,1.68,0,0,1,.41.43,2,2,0,0,1,.27.6,3.2,3.2,0,0,1,.09.8,4,4,0,0,1-.08.78,2.76,2.76,0,0,1-.24.7,2.83,2.83,0,0,1-.38.59,2.74,2.74,0,0,1-.51.45,2.85,2.85,0,0,1-.64.29,2.57,2.57,0,0,1-.75.1,3,3,0,0,1-.42,0L14.3,19l-.44.06h0c0-.09,0-.22,0-.37s0-.33,0-.54,0-.43,0-.68,0-.53,0-.82,0-.59,0-.91,0-.65,0-1c0-.07,0-.13,0-.18a.29.29,0,0,0-.05-.14.24.24,0,0,0-.11-.08l-.19,0-.37,0Zm1.32.07c0,.07,0,.18,0,.33s0,.31,0,.5,0,.4,0,.63,0,.46,0,.7l0,.71c0,.24,0,.46,0,.67s0,.4,0,.57,0,.31,0,.42a3.77,3.77,0,0,0,.4.07l.36,0a2.19,2.19,0,0,0,.66-.09,1.69,1.69,0,0,0,.52-.26,1.71,1.71,0,0,0,.37-.39,2.34,2.34,0,0,0,.25-.5A2.91,2.91,0,0,0,17.1,17a4.49,4.49,0,0,0,0-.64,3.08,3.08,0,0,0-.11-.88,1.72,1.72,0,0,0-.34-.69,1.46,1.46,0,0,0-.63-.45,2.39,2.39,0,0,0-.94-.17h-.28Z"/><path class="cls-2" d="M22.49,14c0,.32,0,.63-.07.93l-.06.86,0,.83c0,.28,0,.56,0,.84s0,.41,0,.57a1.5,1.5,0,0,0,.05.4.6.6,0,0,0,.12.24.33.33,0,0,0,.23.07.71.71,0,0,0,.2,0,1.13,1.13,0,0,0,.26-.07l.06.17L23,19a1.17,1.17,0,0,1-.24.09l-.23.06-.2,0a.45.45,0,0,1-.27-.07.4.4,0,0,1-.16-.18,1,1,0,0,1-.08-.28c0-.11,0-.23,0-.37s0-.29,0-.46,0-.32,0-.5h0a3.83,3.83,0,0,1-.17.43,3.68,3.68,0,0,1-.23.44,2.14,2.14,0,0,1-.28.39,1.72,1.72,0,0,1-.34.32,1.5,1.5,0,0,1-.39.22,1.34,1.34,0,0,1-.46.08,1.45,1.45,0,0,1-.44-.07.87.87,0,0,1-.32-.2A.92.92,0,0,1,19,18.6a2.13,2.13,0,0,1-.14-.38c0-.13-.05-.28-.07-.43s0-.3,0-.46,0-.34,0-.53,0-.38,0-.56l.06-.55c0-.17,0-.33,0-.48s0-.27.05-.38,0-.18,0-.23a.51.51,0,0,0,0-.13.13.13,0,0,0-.05-.09.17.17,0,0,0-.1-.06l-.18,0h-.17l-.21,0,0-.19.57-.12a2,2,0,0,1,.38,0l.18,0a.35.35,0,0,1,.12.07.23.23,0,0,1,.06.12.9.9,0,0,1,0,.18s0,.11,0,.22,0,.23,0,.38,0,.31-.06.5,0,.37-.06.57,0,.4-.05.6,0,.4,0,.58,0,.24,0,.36a1.86,1.86,0,0,0,0,.34,1.32,1.32,0,0,0,.09.3.68.68,0,0,0,.14.25.76.76,0,0,0,.23.17.79.79,0,0,0,.32.06,1.08,1.08,0,0,0,.43-.1,1.48,1.48,0,0,0,.39-.28,2.12,2.12,0,0,0,.33-.43,3,3,0,0,0,.27-.54,5.38,5.38,0,0,0,.18-.64,5.06,5.06,0,0,0,.09-.68,2.17,2.17,0,0,1,0-.26,2.17,2.17,0,0,1,0-.26c0-.09,0-.19,0-.28s0-.2,0-.31,0-.22,0-.35,0-.26,0-.41,0-.07,0-.09L22,14l.09,0h.1l.14,0Z"/><path class="cls-2" d="M25.87,13.87a2.35,2.35,0,0,1,.54.06,1.6,1.6,0,0,1,.42.13,1,1,0,0,1,.28.16.22.22,0,0,1,.1.16c0,.1,0,.23,0,.39s0,.36,0,.59H27v-.11A1.29,1.29,0,0,0,27,15a.72.72,0,0,0-.12-.27,1.08,1.08,0,0,0-.21-.22,1.4,1.4,0,0,0-.26-.16,1.6,1.6,0,0,0-.31-.1,1.87,1.87,0,0,0-.34,0,1.47,1.47,0,0,0-.53.09,1.31,1.31,0,0,0-.43.25,1.51,1.51,0,0,0-.33.38,2.12,2.12,0,0,0-.23.48,3.16,3.16,0,0,0-.14.55,3.64,3.64,0,0,0,0,.57,3.36,3.36,0,0,0,0,.65,2.94,2.94,0,0,0,.17.57,2.25,2.25,0,0,0,.25.46,1.57,1.57,0,0,0,.34.34,1.2,1.2,0,0,0,.4.22,1.33,1.33,0,0,0,.45.08,2.21,2.21,0,0,0,.35,0,1.84,1.84,0,0,0,.36-.11,3.24,3.24,0,0,0,.36-.2,2.48,2.48,0,0,0,.37-.29l.05,0,0,0,0,0a.08.08,0,0,1,0,0l0,0a2.62,2.62,0,0,1-.44.39,1.82,1.82,0,0,1-.44.26,1.5,1.5,0,0,1-.44.14,2.38,2.38,0,0,1-.45.05,1.79,1.79,0,0,1-.57-.09,1.75,1.75,0,0,1-.5-.23,2.42,2.42,0,0,1-.42-.37,2.76,2.76,0,0,1-.32-.49,3.52,3.52,0,0,1-.2-.6,2.93,2.93,0,0,1-.07-.67,3.23,3.23,0,0,1,.07-.69,2.54,2.54,0,0,1,.21-.66,2.66,2.66,0,0,1,.34-.59,2.18,2.18,0,0,1,.48-.48,2.34,2.34,0,0,1,.63-.32A2.29,2.29,0,0,1,25.87,13.87Z"/><path class="cls-2" d="M27.7,15.29h-.22v-.47a2.06,2.06,0,0,1,0-.37.61.61,0,0,1,.08-.25.38.38,0,0,1,.18-.15,1,1,0,0,1,.32,0h.29l.34,0h2l.25,0,.21,0,.19,0a.45.45,0,0,1,0,.18.25.25,0,0,1-.12.22.75.75,0,0,1-.37.08l-.53,0-.69-.06c0,.22,0,.45,0,.7s0,.5,0,.76,0,.53,0,.81l0,.82c0,.28,0,.55,0,.82s0,.53,0,.78l-.52.07h0c0-.28,0-.55,0-.8l0-.76c0-.25,0-.49,0-.74s0-.5,0-.76,0-.53,0-.82v-.9h-.76a.78.78,0,0,0-.22,0,.53.53,0,0,0-.17.08.42.42,0,0,0-.13.16.8.8,0,0,0-.08.26,2.06,2.06,0,0,0,0,.39Z"/><path class="cls-2" d="M32,14.69c0-.07,0-.13,0-.18a.33.33,0,0,0-.05-.12.26.26,0,0,0-.1-.07l-.17,0h-.18l-.22,0,0-.18.55-.12a2.13,2.13,0,0,1,.39,0,.46.46,0,0,1,.22,0,.2.2,0,0,1,.11.11.48.48,0,0,1,0,.19v.51c0,.14,0,.32,0,.54s0,.47,0,.75,0,.59,0,.91l0,1,0,1-.52.07h0c0-.42,0-.82,0-1.19s0-.74,0-1.1,0-.71,0-1S32,15.05,32,14.69Z"/><path class="cls-2" d="M35.42,19.16a2.09,2.09,0,0,1-.81-.15,1.72,1.72,0,0,1-.64-.46,2.09,2.09,0,0,1-.42-.75,3.66,3.66,0,0,1-.14-1.05,4.52,4.52,0,0,1,.06-.74,3.57,3.57,0,0,1,.18-.68,3,3,0,0,1,.31-.59,2.06,2.06,0,0,1,.42-.46,2,2,0,0,1,.55-.3,2.11,2.11,0,0,1,1.48,0,1.66,1.66,0,0,1,.63.45,2.23,2.23,0,0,1,.42.76,3.32,3.32,0,0,1,.15,1,4.52,4.52,0,0,1-.06.74,4.85,4.85,0,0,1-.19.68,2.89,2.89,0,0,1-.3.58,2.37,2.37,0,0,1-.43.46,1.83,1.83,0,0,1-.55.3A1.76,1.76,0,0,1,35.42,19.16Zm.1-.28a1.14,1.14,0,0,0,.46-.09,1.1,1.1,0,0,0,.37-.23,1.53,1.53,0,0,0,.29-.37,2.09,2.09,0,0,0,.19-.48,2.62,2.62,0,0,0,.12-.57,4.4,4.4,0,0,0,0-.64,4,4,0,0,0-.12-1,2.24,2.24,0,0,0-.32-.73,1.37,1.37,0,0,0-.47-.43,1.26,1.26,0,0,0-.57-.14,1.4,1.4,0,0,0-.47.08,1.47,1.47,0,0,0-.37.24,1.45,1.45,0,0,0-.28.36,2.55,2.55,0,0,0-.2.48,4.56,4.56,0,0,0-.12.58,6.28,6.28,0,0,0,0,.64,3.94,3.94,0,0,0,.12,1,2.36,2.36,0,0,0,.32.73,1.27,1.27,0,0,0,.47.43A1.17,1.17,0,0,0,35.52,18.88Z"/><path class="cls-2" d="M39.42,14.37l.23.4.27.46.31.51.31.52.32.52.31.5.28.44.24.37V17c0-.32,0-.62,0-.87s0-.49,0-.7,0-.37,0-.53,0-.28,0-.38a2.43,2.43,0,0,1,0-.26.53.53,0,0,1,0-.15A.26.26,0,0,1,42,14a.19.19,0,0,1,.1,0l.12,0a.66.66,0,0,1,.3.07v0a1.42,1.42,0,0,0-.18.39c0,.17-.1.35-.14.54s-.06.41-.08.63,0,.44-.06.66l0,.62c0,.2,0,.38,0,.53s0,.27,0,.41,0,.26,0,.39,0,.26,0,.4V19l-.27,0h0a2.86,2.86,0,0,1-.16-.25l-.23-.35c-.09-.13-.18-.28-.28-.44l-.31-.49L40.34,17,40,16.48c-.11-.17-.21-.35-.31-.51l-.29-.47-.24-.41c-.08-.12-.14-.22-.19-.31,0,.33,0,.64,0,1s0,.6,0,.88,0,.55,0,.81,0,.49,0,.71a3.63,3.63,0,0,1,0,.39,1.56,1.56,0,0,1,0,.27.58.58,0,0,1,0,.17.22.22,0,0,1-.09.1l-.12,0h-.34l0,0a2.87,2.87,0,0,0,.17-.47c.05-.18.09-.37.13-.56s.07-.4.1-.61l.06-.64c0-.21,0-.41.05-.62s0-.4,0-.58,0-.36,0-.52v-.41a.76.76,0,0,0,0-.16.28.28,0,0,0,0-.11.2.2,0,0,0-.11-.06.42.42,0,0,0-.17,0h-.17l-.21,0,0-.19.33-.08.27-.05.22,0L39,14l.14,0a.41.41,0,0,1,.11.07.55.55,0,0,1,.1.11C39.34,14.23,39.38,14.29,39.42,14.37Z"/><path class="cls-2" d="M43.1,17.75a.34.34,0,0,0,0,.1V18a1.29,1.29,0,0,0,.06.42.75.75,0,0,0,.2.29.9.9,0,0,0,.29.16,1.62,1.62,0,0,0,.4.05,1.14,1.14,0,0,0,.41-.07,1,1,0,0,0,.34-.18.88.88,0,0,0,.33-.71,1.1,1.1,0,0,0,0-.27.84.84,0,0,0-.12-.23,1,1,0,0,0-.16-.2l-.22-.16-.24-.15-.26-.14-.28-.16-.26-.17a1.57,1.57,0,0,1-.42-.42,1.39,1.39,0,0,1-.12-.28,1.29,1.29,0,0,1,0-.35A1.49,1.49,0,0,1,43,15a1.56,1.56,0,0,1,.17-.37,1.48,1.48,0,0,1,.26-.3,1.21,1.21,0,0,1,.32-.22,1.57,1.57,0,0,1,.38-.14,1.84,1.84,0,0,1,.41-.05l.21,0,.22,0,.21.06.17.08.13.09a.19.19,0,0,1,0,.12v.16a1.62,1.62,0,0,1,0,.21,2.62,2.62,0,0,1,0,.27c0,.09,0,.2,0,.3h-.22v-.15a1.12,1.12,0,0,0-.06-.38.68.68,0,0,0-.18-.28.92.92,0,0,0-.29-.17,1.36,1.36,0,0,0-.36-.05,1.12,1.12,0,0,0-.38.06.91.91,0,0,0-.3.19.72.72,0,0,0-.2.29.86.86,0,0,0-.08.36.88.88,0,0,0,0,.29.66.66,0,0,0,.11.24,1.12,1.12,0,0,0,.18.2A1.28,1.28,0,0,0,44,16l.25.15.26.15.28.15a2.26,2.26,0,0,1,.26.16,2.11,2.11,0,0,1,.23.19,1.45,1.45,0,0,1,.19.23,1.11,1.11,0,0,1,.12.27,1.15,1.15,0,0,1,0,.33,1.53,1.53,0,0,1-.08.54,1.29,1.29,0,0,1-.22.4,1.26,1.26,0,0,1-.32.29,1.44,1.44,0,0,1-.37.19,2,2,0,0,1-.38.11l-.36,0a2.63,2.63,0,0,1-.41,0,2.44,2.44,0,0,1-.34-.08.75.75,0,0,1-.22-.11c-.06,0-.09-.08-.09-.13s0-.24,0-.42,0-.4,0-.65Z"/></g></g></svg>
+    <section class="bg-orange-100/50" id="mission">
+        <div class="p-10 lg:px-16 lg:py-24">
+            <div class="mx-auto max-w-lg text-left">
+                <h2 class="text-4xl font-bold text-orange-700 md:text-3xl">
+                Notre mission
+                </h2>
+        
+                <p class="text-gray-900 mt-4 block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor officia blanditiis
+                repellat in, vero, aperiam porro ipsum laboriosam consequuntur exercitationem incidunt
+                tempora nisi?
+                </p>
+            </div>
+        
+            <div class="mx-auto mt-8 max-w-lg text-left">
+
+                <a
+                    class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+                    href="#services"
+                    >
+                    <span class="absolute inset-0 border border-orange-600 group-active:border-orange-500"></span>
+                    <span
+                    class="block border border-orange-600 bg-orange-600 px-12 py-3 transition-transform active:border-orange-500 active:bg-orange-500 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                    >
+                    Prendre Rendez-vous
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="presentation">
+        <div class="mx-auto max-w-screen-xl p-10 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8">
+            <div class="md:col-span-1">
+              <div class="max-w-lg md:max-w-none">
+                <h2 class="text-2xl font-semibold text-orange-700 sm:text-3xl">
+                  Notre processus de travail habituel
+                </h2>
+      
+                <p class="mt-4 text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
+                  architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas
+                  sequi.
+                </p>
+              </div>
+            </div>
+      
+            <div class="md:col-span-3">
+              <video
+                src="./assets/video.mp4"
+                class=""
+                controls
+              >
+            </video>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="bg-orange-100/50">
+        <div class="sm:h-screen mx-auto max-w-screen-2xl p-10 sm:px-6 sm:py-12 lg:px-8">
+          <header class="text-center">
+            <h2 class="text-4xl md:text-3xl max-w-md font-bold text-orange-700 sm:text-3xl mx-auto text-left">Nos services</h2>
+      
+            <p class="mx-auto mt-4 max-w-md text-gray-900 text-left">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
+              dicta incidunt est ipsam, officia dolor fugit natus?
+            </p>
+          </header>
+      
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <a href="#" class="group relative block bg-black">
+                <img
+                    alt=""
+                    src="./assets/podcast.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+                
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium uppercase tracking-widest text-white">Montage vidéo</p>
+                
+                    <p class="text-xl font-bold text-white sm:text-2xl">_</p>
+                
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                        <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                        quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="group relative block bg-black">
+                <img
+                    alt=""
+                    src="./assets/podcast.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+                
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium uppercase tracking-widest text-orange-500">Podcast</p>
+                
+                    <p class="text-xl font-bold text-white sm:text-2xl">_</p>
+                
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                        <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                        quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="group relative block bg-black">
+                <img
+                    alt=""
+                    src="./assets/podcast.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+                
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium uppercase tracking-widest text-orange-500">Montage vidéo</p>
+                
+                    <p class="text-xl font-bold text-white sm:text-2xl">_</p>
+                
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                        <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                        quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="group relative block bg-black">
+                <img
+                    alt=""
+                    src="./assets/podcast.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+                
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium uppercase tracking-widest text-orange-500">Etalonnage</p>
+                
+                    <p class="text-xl font-bold text-white sm:text-2xl">_</p>
+                
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                        <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                        quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="group relative block bg-black">
+                <img
+                    alt=""
+                    src="./assets/podcast.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+                
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium uppercase tracking-widest text-orange-500">Montage vidéo</p>
+                
+                    <p class="text-xl font-bold text-white sm:text-2xl">_</p>
+                
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                        <p class="text-sm text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                        quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+
+
+    <section class="flex" id="equipe">
+        <div class="p-10 md:p-12 lg:px-16 lg:py-24 w-1/2">
+            <div class="mx-auto max-w-lg text-left">
+                <h2 class="text-4xl font-bold text-orange-700 md:text-3xl">
+                Les membres de notre équipe
+                </h2>
+        
+                <p class="hidden text-gray-900 sm:mt-4 sm:block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor officia blanditiis
+                repellat in, vero, aperiam porro ipsum laboriosam consequuntur exercitationem incidunt
+                tempora nisi?
+                </p>
+            </div>
+        
+            <div class="mx-auto mt-8 max-w-lg text-left">
+
+                <a
+                    class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+                    href="#"
+                    >
+                    <span class="absolute inset-0 border border-orange-600 group-active:border-orange-500"></span>
+                    <span
+                    class="block border border-orange-600 bg-orange-600 px-12 py-3 transition-transform active:border-orange-500 active:bg-orange-500 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                    >
+                    Nous contacter
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="px-8 py-16 flex flex-col gap-4 lg:gap-8 w-1/2 ">
+            <div class="h-24 overflow-hidden bg-gray-200/20">
+
+                <article class="border border-orange-400 bg-orange-400 p-4">
+                    <div class="flex items-center gap-4">
+                      <img
+                        alt=""
+                        src="./assets/logo.png"
+                        class="size-16 rounded-full object-cover"
+                      />
+                  
+                      <div>
+                        <h3 class="text-lg font-medium text-white">Benjamin Holl</h3>
+                  
+                        <div class="flow-root">
+                          <ul class="-m-1 flex flex-wrap">
+                            <li class="p-1 leading-none">
+                              <a href="#" class="text-xs font-medium text-gray-300"> Twitter </a>
+                            </li>
+                  
+                            <li class="p-1 leading-none">
+                              <a href="#" class="text-xs font-medium text-gray-300"> GitHub </a>
+                            </li>
+                  
+                            <li class="p-1 leading-none">
+                              <a href="#" class="text-xs font-medium text-gray-300">Website</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <ul class="mt-4 space-y-2">
+                      <li>
+                        <a href="#" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-orange-600">
+                          <strong class="font-medium text-white">Project A</strong>
+                  
+                          <p class="mt-1 text-xs font-medium text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequuntur deleniti,
+                            unde ab ut in!
+                          </p>
+                        </a>
+                      </li>
+                  
+                    </ul>
+                  </article>
             </div>
 
-            <ul id="navmenu" class="absolute top-24 w-full h-40 py-3 bg-slate-300
-                                    sm:relative">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
+            <div class="h-24 overflow-hidden bg-gray-200/20">
+
+                <article class="border border-gray-700 bg-gray-800 p-4">
+                    <div class="flex items-center gap-4">
+                      <img
+                        alt=""
+                        src="./assets/logo2.png"
+                        class="size-16 rounded-full object-cover"
+                      />
+                  
+                      <div>
+                        <h3 class="text-lg font-medium text-white">Claire Mac</h3>
+                  
+                        <div class="flow-root">
+                          <ul class="-m-1 flex flex-wrap">
+                            <li class="p-1 leading-none">
+                              <a href="#" class="text-xs font-medium text-gray-300"> Twitter </a>
+                            </li>
+                  
+                            <li class="p-1 leading-none">
+                              <a href="#" class="text-xs font-medium text-gray-300"> GitHub </a>
+                            </li>
+                  
+                            <li class="p-1 leading-none">
+                              <a href="#" class="text-xs font-medium text-gray-300">Website</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <ul class="mt-4 space-y-2">
+                  
+                      <li>
+                        <a href="#" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-orange-600">
+                          <strong class="font-medium text-white">Project B</strong>
+                  
+                          <p class="mt-1 text-xs font-medium text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cumque saepe sit.
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </article>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div class="space-y-4 md:space-y-8">
+            <div class="max-w-xl">
+              <h2 class="text-4xl font-semibold text-gray-900 md:text-3xl">
+                Professional Film and podcast making
+              </h2>
+      
+              <p class="mt-4 text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
+                architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas sequi.
+              </p>
+            </div>
+      
+            <img
+              src="./assets/cam2.jpg"
+              class=""
+              alt=""
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
+            <div class="h-32 rounded-lg bg-gray-200/20">
+
+                <div class="flex items-end gap-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="size-20 rounded-lg object-cover"
+                    />
+                  
+                    <div>
+                      <h3 class="text-lg/tight font-medium text-gray-900">Title goes here</h3>
+                  
+                      <p class="mt-0.5 text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptas distinctio
+                        nesciunt quas non animi.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="h-32 rounded-lg bg-gray-200"></div>
+            <div class="h-32 rounded-lg bg-gray-200"></div>
+            <div class="h-32 rounded-lg bg-gray-200"></div>
+        </div> -->
+
+    
+
+      <footer class="bg-orange-800">
+        <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl"> Atteignez votre audience avec nos solutions professionnelles</h2>
+      
+            <p class="mx-auto mt-4 max-w-sm text-gray-900">
+              ___
+            </p>
+      
+            <a
+                class="mt-8 group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+                href="#"
+                >
+                <span class="absolute inset-0 border border-white group-active:border-white"></span>
+                <span
+                class="block border text-orange-950 border-white bg-white px-12 py-3 transition-transform active:border-white active:bg-white group-hover:-translate-x-1 group-hover:-translate-y-1"
+                >
+                Get more
+                </span>
+            </a>
+          </div>
+      
+          <div
+            class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
+          >
+            <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
+              <li>
+                <a href="#" onclick="event.preventDefault()" class="text-white transition hover:opacity-75" id="footerDate"> &copy; BandM7 productions </a>
+              </li>
+      
+              <!-- <li>
+                <a href="#" class="text-gray-500 transition hover:opacity-75" id="footerDate">  </a>
+              </li> -->
+      
             </ul>
-        </nav>
+      
+            <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-white transition hover:opacity-75"
+                >
+                  <span class="sr-only">Facebook</span>
+      
+                  <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-white transition hover:opacity-75"
+                >
+                  <span class="sr-only">Instagram</span>
+      
+                  <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-white transition hover:opacity-75"
+                >
+                  <span class="sr-only">Twitter</span>
+      
+                  <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    />
+                  </svg>
+                </a>
+              </li>
+      
+      
+            </ul>
+          </div>
+        </div>
+      </footer>
 
-        <section class="hero h-96 bg-black">
+      <script>
+        const nDate = new Date().getFullYear();
+        const footerDateLabel = document.querySelector("#footerDate");
 
-        </section>
-    </header>
-    
-    
+        footerDateLabel.innerHTML += ' ' + nDate + '. Tous droits réservés.';
 
+        const mobileMenu = document.querySelector("#mobile-menu");
+        const btnToggleMenu = document.querySelector("#btnToggleMenu");
 
+        const nav = document.querySelector("nav");
 
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script>
-        const showMenuBtn = document.querySelectorAll("i")[0];
-        const navMenu = document.querySelector("#navmenu");
-        showMenuBtn.addEventListener('click', toggleMenu);
+        btnToggleMenu.addEventListener('click', toggleMenu);
 
         function toggleMenu() {
-           const menuOpen = !navMenu.classList.contains('hidden');
-
-            if(menuOpen){
-                navMenu.classList.add('hidden');
-                return;
-            }
-
-            navMenu.classList.remove('hidden');
+          // if(mobileMenu.classList.contains('opacity_100')){
+          if(nav.classList.contains('h-16')){
+            nav.classList.remove('h-16');
+            return;
+          }
+          nav.classList.add('h-16');
         }
 
-    </script>
+      </script>
 </body>
 </html>
